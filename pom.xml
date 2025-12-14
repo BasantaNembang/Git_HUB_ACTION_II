@@ -49,6 +49,8 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 		</plugins>
+		<finalName>demo-ci-cd-ii</finalName>
+
 	</build>
 
 </project>
