@@ -40,18 +40,19 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-  deploy:
-    needs: build
-    runs-on: [aws-ec2]
-    steps:
-      - name: Pull name from docker HUB
-        run: docker pull basantanembang10/demo-ci-cd-ii:latest
+#  deploy:
+#    needs: build
+#    runs-on: [aws-ec2]
+#    steps:
+#      - name: Pull name from docker HUB
+#        run: docker pull basantanembang10/demo-ci-cd-ii:latest
+#
+#      - name: remove the old docker container
+#        run: docker rm -f demo-ci-cd-ii-container
+#
+#      - name: run the docker container
+#        run: docker run -d -p 8080:8080 --name demo-ci-cd-ii-container basantanembang10/demo-ci-cd-ii:latest
 
-      - name: remove the old docker container
-        run: docker rm -f demo-ci-cd-ii-container
-
-      - name: run the docker container
-        run: docker run -d -p 8080:8080 --name demo-ci-cd-ii-container basantanembang10/demo-ci-cd-ii:latest
 
 
-
+s
