@@ -9,7 +9,6 @@ public class MyController {
 
     @GetMapping("/")
     public String getResponse(){
-        System.out.println("Hey there.................");
         return "Hey there";
     }
 
