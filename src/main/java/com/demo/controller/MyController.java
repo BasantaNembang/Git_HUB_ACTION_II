@@ -9,7 +9,7 @@ public class MyController {
 
     @GetMapping("/")
     public String getResponse(){
-        return "Hey there";
+        return "Am i working";
     }
 
 
